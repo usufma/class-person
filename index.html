@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class Person</title>
+</head>
+<h1  style="color:green;font-size:46px;"> To check details go to console<h1>
+<script>
+class Person {
+  constructor(name, age, country) {
+    this.name = name;
+    this.age = age;
+    this.country = country;
+  }
+
+  displayDetails() {
+    console.log(`Name: ${this.name}, Age: ${this.age}, Country: ${this.country}`);
+  }
+}
+const person1 = new Person('Bharat', 40, 'INDIA')
+const person2 = new Person('Alice', 30, 'USA');
+const person3 = new Person('Bob', 25, 'Canada');
+
+person1.displayDetails();
+person2.displayDetails();
+person3.displayDetails();
+</script>
+</body>
+</html>
